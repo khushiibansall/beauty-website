@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&family=Kanit:wght@300&family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&family=Playfair+Display:wght@700&family=Raleway&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+   
+}
+header{
+    
+    min-height: 100vh;
+    height: 200vh; 
+    width: 100%;
+    /* background: green; */
+    /* if we put vw then scrollbar will appear */
+    position: relative;
+}
+nav{
+    margin: 1% 3%;
+    display: flex;
+    justify-content: space-between ;
+}
+.girl {
+    position: absolute;
+    width: 50%;
+    height: 52%;
+    border-radius: 50%;
+    left: 38%;
+    top: 18%;
+    
+}
+.house {
+    position: absolute;
+    width: 28%; 
+    height: 29%;
+    border-radius: 50%;
+    left: 20%;
+    
+    top: 48%;
+}
+.egg {
+    position: absolute;
+    width: 22%; 
+    height: 22%; 
+    border-radius: 50%;
+    top: 22%;
+    left: 10%;
+
+}
+.beige {
+    position: absolute;
+    width: 13%; 
+    height: 14%; /* This maintains the aspect ratio */
+    border-radius: 50%;
+    left: 80%;
+    top: 10%;
+}
+.header-text{
+    position: absolute;
+    left: 50%;
+    top: 75%;
+    text-align: right;
+    
+}
+.header-text>h2{
+    font-family: 'Poppins', sans-serif;
+}
+.header-text>h1{
+    font-family: 'Playfair Display', serif;
+    font-size: 4rem;
+    
+
+}
+header::after {
+    content: ' ';
+   
+    width: 100%;
+    height: 5px; 
+    background-color: rgb(217, 217, 190);
+    position: absolute;
+   bottom: 0;
+    left: 0;
+}
+.second-portion{
+    width: 100%;
+    height: 100vh;
+    
+    display: flex;
+    justify-content: space-between;
+    margin-top: 7%; 
+}
+.second-portion img{
+    width: 43%;
+    border-radius: 50%;
+    
+}
+.second-portion p{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+.second-portion h2{
+    font-family: 'Raleway', sans-serif;
+    font-size: 110%;
+}
+.box1,
+.box2,
+.box3,
+.box4 {
+    background: white;
+    width: 22%;
+    height: 70%;
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); /* Adjust the values as needed */
+}
+.box1{
+    margin-left: 4%;
+}
+.box2{
+    left: 25%;
+}
+.box3{
+    left: 60%; 
+}
+.box4{
+    left: 90%; 
+    margin-right: 4%;
+}
+.third-portion{
+    width: 100%;
+    height: 107vh;
+    display: flex;
+    position: relative;
+   
+   
+}
+.welcome{
+    position: absolute;
+    margin-left: 5%;
+    background: white;
+    width: 37%;
+    height: 69%;
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-around;
+    align-items: center;
+    top: 35%;
+    z-index: 1; 
+}
+.welcome h2{
+    font-family: 'Playfair Display', serif;
+    font-size: 400%;
+}
+.welcome p{
+    font-family: 'Raleway', sans-serif;
+    font-style: italic;
+}
+.third-portion img{
+    position: absolute;
+    border-radius: 50%;
+    width: 60%;
+    height: 110%;
+    left: 35%;
+    top: -10%;
+   
+
+}
+.fourth-portion{
+    background: white;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    margin-top: 4%;
+    justify-content: space-between;
+}
+.fourth-portion .eyebrow, .fourth-portion .facials{
+    display: flex;
+    flex-direction: column;
+    padding: 5% 0 0 0 ;
+}
+.fourth-portion .eyebrow{
+    padding: 5% 2% 0 12% ;
+}
+.fourth-portion .facials{
+    padding: 5% 12% 0 2% ;
+}
+.fourth-portion img{
+    /* position: absolute; */
+    width: 45%; 
+    height: 40%; 
+    border-radius: 50%;
+    
+}
+.fourth-portion h2 {
+    margin-top: 5%; /* Adjust margin-top for spacing between h2 and img */
+    margin-bottom: 5%; /* Adjust margin-bottom for spacing between h2 and p */
+}
+
+.fourth-portion p {
+    margin-top: 5%; /* Adjust margin-top for spacing between p and h2 */
+    margin-bottom: 5%; /* Adjust margin-bottom for spacing between p and img */
+}
+
+.fifth-portion{
+    width: 100%;
+    height: 130vh;
+    background: beige;
+    display: flex;
+}
+
+.beauty{
+    flex: 1;
+    width: 100%; 
+    height: 100%;
+    padding: 15%;
+}
+
+.right-side{
+    flex: 1;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.right-side h2,p,a{
+    padding: 3%;
+}
+
+.skin-image{
+    margin-top:7% ;
+    width: 47%; 
+    height: 47%;
+    border-radius: 50%;
+    padding: 3%;
+
+}
+.sixth-portion{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.smile{
+    width: 40%;
+    /* padding: 15%; */
+    border-radius: 50%;
+}
+/* .sixth-portion h2{
+    
+}
+ */
+
+
+
+
+ 
